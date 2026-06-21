@@ -14,7 +14,7 @@ This personal research project explores energy trading, physical supply chains, 
 - **Scenario Analysis** - base case, cold winter, supply disruption, recession, LNG import surge, and carbon shock scenarios.
 - **Risk Analytics** - daily returns, volatility, drawdown, correlation matrix, simple historical VaR, and stress loss.
 - **Trading & Supply Assistant** - deterministic market-note generator with market context, major risks, and commercial recommendations.
-- **Report Summary** - printable HTML-style analyst report with executive summary, metrics, scenario result, recommendation, and limitations.
+- **Report Summary** - analyst-style report with executive summary, metrics, scenario result, recommendation, and limitations.
 
 ## Quick Start
 
@@ -49,14 +49,33 @@ Public ticker proxies are useful for demonstration, but they do not replace exch
 
 ## Screenshots
 
-Place screenshots in a future `screenshots/` folder and link them here.
+### Dashboard Overview
 
-- Dashboard overview screenshot placeholder
-- Supply-demand balance screenshot placeholder
-- Storage optimisation screenshot placeholder
-- Scenario analysis screenshot placeholder
-- Risk analytics screenshot placeholder
-- Report summary screenshot placeholder
+![Dashboard Overview](screenshots/dashboard.png)
+
+### Market Data
+
+![Market Data](screenshots/market_data.png)
+
+### Supply-Demand Balance
+
+![Supply-Demand Balance](screenshots/supply_demand.png)
+
+### Storage Optimisation
+
+![Storage Optimisation](screenshots/storage_optimisation.png)
+
+### Scenario Analysis
+
+![Scenario Analysis](screenshots/scenario_analysis.png)
+
+### Risk Analytics
+
+![Risk Analytics](screenshots/risk_analytics.png)
+
+### Report Summary
+
+![Report Summary](screenshots/report_summary.png)
 
 ## Future Improvements
 
@@ -72,7 +91,7 @@ Place screenshots in a future `screenshots/` folder and link them here.
 ## Project Structure
 
 ```text
-energy-trading-supply-platform/
+./
   app.py
   requirements.txt
   README.md
@@ -90,4 +109,12 @@ energy-trading-supply-platform/
     report.py
     assistant.py
     ui.py
+  screenshots/
+    dashboard.png
+    market_data.png
+    supply_demand.png
+    storage_optimisation.png
+    scenario_analysis.png
+    risk_analytics.png
+    report_summary.png
 ```

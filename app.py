@@ -440,20 +440,20 @@ def main() -> None:
     )
     active_range = f"{start_date:%d %b %Y} to {end_date:%d %b %Y}"
 
-    page = st.sidebar.radio(
-        "Module",
-        [
-            "Dashboard",
-            "Market Data",
-            "Supply-Demand Balance",
-            "Storage Optimisation",
-            "Spread Analysis",
-            "Scenario Analysis",
-            "Risk Analytics",
-            "Trading & Supply Assistant",
-            "Report Summary",
-        ],
-    )
+    pages = [
+        "Dashboard",
+        "Market Data",
+        "Supply-Demand Balance",
+        "Storage Optimisation",
+        "Spread Analysis",
+        "Scenario Analysis",
+        "Risk Analytics",
+        "Trading & Supply Assistant",
+        "Report Summary",
+    ]
+    requested_page = st.query_params.get("page", "Dashboard")
+    initial_page = requested_page if requested_page in pages else "Dashboard"
+    page = st.sidebar.radio("Module", pages, index=pages.index(initial_page))
 
     st.sidebar.caption("Commodity market analytics across supply, storage, risk, and scenarios.")
 
